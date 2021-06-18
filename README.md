@@ -8,6 +8,13 @@ Our experiments on large real-world and synthetic data sets using a 48-core mach
 
 This repository hosts the parallel code of the fastest HDBSCAN* algorithm developed in our paper [2]. It is written in C++ with parallelism built-in, and it comes with a Python wrapper to improve the ease of use. It currently supports point data set with dimensionality 2 -- 20.
 
+To start using our software, clone and navigate to the repository:
+
+```
+git clone https://github.com/wangyiqiu/hdbscan.git
+cd hdbscan
+```
+
 # Dendencies
 
 The software runs on any modern x86-based multicore machines. To compile, it requires g++ 5.4.0 or later. The build system is [CMake](https://cmake.org/install/). 
