@@ -26,7 +26,7 @@ git submodule init
 git submodule update
 ```
 
-The rest of the dependencies are only needed for the Python binding. The bindings are written for Python 3, and is tested on Python 3.8.5. In order to run the Python example `pybindings/example.py`, install the dependencies in `pybindings/requirements.txt`:
+The rest of the dependencies are needed to run our Python example (to generate the data set, and visualize the dendrogram). Our Python bindings are written for Python 3, and is tested on Python 3.8.5. Install the dependencies in `pybindings/requirements.txt` by:
 
 ```
 pip3 install -r pybindings/requirements.txt
@@ -48,7 +48,7 @@ cd ..
 
 ### Option 1: Run the binary
 
-To run the program as using the compiled binary, do the following. The terminal output will show the output of the program, and the total time taken. The output of the binary can be customized by editing `src/hdbscanTime.cpp`, which contains the `main` function, and the HDBSCAN* API is available in `include/hdbscan.h`. The binary parses point data set from disk, which needs to be a CSV file similar to the `example-data.csv` that we provide as example.
+To run the program as using the compiled binary, do the following. The terminal output will show the output of the program, and the total time taken. The output of the binary can be customized by editing `src/hdbscanTime.cpp`, which contains the `main` function, and the HDBSCAN* API is available in `include/hdbscan.h`. The binary parses point data set from disk, which needs to be a CSV file similar to the `example-data.csv` that we provide as example. Starting from the project root directory:
 
 ```
 cd build/src
@@ -57,13 +57,15 @@ cd build/src
 
 ### Option 2: Use the Python binding
 
-To perform data analytics tasks, we recommend using the Python binding. See `pybindings/example.py` for an usage example. Before running the Python example shown below, please be sure to install the Python dependencies mentioned earlier. The Python call returns a dendrogram, which can be visualized using the [dendrogram visualization function](https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hierarchy.dendrogram.html#scipy.cluster.hierarchy.dendrogram) of Scipy as shown in the `pybindings/example.py`. After successfully running the example below, you will be able to find an example dendrogram plot generated in the same directory.
+To perform data analytics tasks, we recommend using the Python binding. Please install the Python dependencies mentioned earlier, then starting from the project root directory:
 
 ```
 cd build/pybindings
 cp ../../pybindings/example.py .
 python3 example.py
 ```
+
+The file [pybindings/example.py](https://github.com/wangyiqiu/hdbscan/blob/main/pybindings/example.py) contains a full usage example. The Python call returns a dendrogram, which can be visualized using the [scipy.cluster.hierarchy.dendrogram](https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hierarchy.dendrogram.html#scipy.cluster.hierarchy.dendrogram) of Scipy. While working seamlessly with common packages, our HDBSCAN* computation is very fast, and is highly parallel. After successfully running the example above, you will be able to find an example dendrogram plot generated in the same directory:
 
 <img src="pybindings/example.png" alt="dendrogram-example" width="250"/>
 
