@@ -65,6 +65,8 @@ cp ../../pybindings/example.py .
 python3 example.py
 ```
 
+<img src="pybindings/example.png" alt="dendrogram-example" width="250"/>
+
 # References
 
 [1] [Campello, R. J., Moulavi, D., & Sander, J. (2013, April). Density-based clustering based on hierarchical density estimates. In Pacific-Asia conference on knowledge discovery and data mining (pp. 160-172). Springer, Berlin, Heidelberg.](https://link.springer.com/chapter/10.1007/978-3-642-37456-2_14)
