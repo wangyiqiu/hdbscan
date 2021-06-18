@@ -37,9 +37,10 @@ void timeHdbscan(sequence<point<dim>>& P, size_t minPts, int rounds, char* outFi
 }
 
 int main(int argc, char* argv[]) {
-  commandLine P(argc,argv,"[-o <outFile>] [-r <rounds>] [-p <0/1 perturb points>] <inFile>");
+  //commandLine P(argc,argv,"[-o <outFile>] [-r <rounds>] [-p <0/1 perturb points>] <inFile>");
+  commandLine P(argc,argv,"[-m <minPts value>] <inFile>");
+
   char* iFile = P.getArgument(0);
-  size_t k = P.getOptionIntValue("-k",1);
   size_t minPts = P.getOptionIntValue("-m",1);
   char* oFile = P.getOptionValue("-o");
   int rounds = P.getOptionIntValue("-r",1);
