@@ -71,6 +71,6 @@ The file [pybindings/example.py](https://github.com/wangyiqiu/hdbscan/blob/main/
 
 # References
 
-[1] [Campello, R. J., Moulavi, D., & Sander, J. (2013, April). Density-based clustering based on hierarchical density estimates. In Pacific-Asia conference on knowledge discovery and data mining (pp. 160-172). Springer, Berlin, Heidelberg.](https://dl.acm.org/doi/10.1145/2733381)
+[1] [Campello, R. J., Moulavi, D., Zimek, A., & Sander, J. (2015). Hierarchical density estimates for data clustering, visualization, and outlier detection. ACM Transactions on Knowledge Discovery from Data (TKDD), 10(1), 1-51.](https://dl.acm.org/doi/10.1145/2733381)
 
 [2] [Wang, Y., Yu, S., Gu, Y., & Shun, J. (2021). Fast parallel algorithms for euclidean minimum spanning tree and hierarchical spatial clustering. arXiv preprint arXiv:2104.01126.](https://arxiv.org/pdf/2104.01126.pdf)
