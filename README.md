@@ -1,6 +1,6 @@
 # Overview
 
-This repository hosts a fast parallel implementation for HDBSCAN* [1] (hierarchical DBSCAN). The implementation stems from our parallel algorithms [2] developed at MIT, and presented at SIGMOD 2021. Our approach is based on generating a well-separated pair decomposition followed by using Kruskal's minimum spanning tree algorithm and bichromatic closest pair computations. We also give a new parallel divide-and-conquer algorithm for computing the dendrogram, which are used in visualizing clusters of different scale that arise for HDBSCAN*.
+This repository hosts a fast parallel implementation for HDBSCAN* [[1]](https://dl.acm.org/doi/10.1145/2733381) (hierarchical DBSCAN). The implementation stems from our parallel algorithms [[2]](https://arxiv.org/pdf/2104.01126.pdf) developed at MIT, and presented at SIGMOD 2021. Our approach is based on generating a well-separated pair decomposition followed by using Kruskal's minimum spanning tree algorithm and bichromatic closest pair computations. We also give a new parallel divide-and-conquer algorithm for computing the dendrogram, which are used in visualizing clusters of different scale that arise for HDBSCAN*.
 
 Our experiments on large real-world and synthetic data sets using a 48-core machine show that our fastest algorithms outperform the best serial algorithms for the problems by 11.13--55.89x, and existing parallel algorithms by at least an order of magnitude.
 
