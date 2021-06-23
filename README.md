@@ -6,7 +6,7 @@ Our experiments on large real-world and synthetic data sets using a 48-core mach
 
 # Software
 
-This repository hosts the parallel HDBSCAN* implementatoin from our paper [2]. It is written in C++ with parallelism built-in, and it comes with a Python wrapper to improve the ease of use. It currently supports point data set with dimensionality 2 -- 20. The paper also discusses Euclidean MST, whose code is available [here](https://github.com/wangyiqiu/pargeo.git).
+This repository hosts the parallel HDBSCAN* implementation of our paper [2]. It is written in C++ with parallelism built-in, and it comes with a Python wrapper to improve the ease of use. It currently supports point data set with dimensionality 2 -- 20. The paper also discusses Euclidean MST, whose code is available [here](https://github.com/wangyiqiu/pargeo.git).
 
 In this implementation, we use a simpler algorithm for the dendrogram, which is different that in the paper. If you are interested in the original research code, please contact the authors.
 
