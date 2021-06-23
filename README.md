@@ -75,4 +75,4 @@ The file [pybindings/example.py](https://github.com/wangyiqiu/hdbscan/blob/main/
 
 [1] [Campello, R. J., Moulavi, D., Zimek, A., & Sander, J. (2015). Hierarchical density estimates for data clustering, visualization, and outlier detection. ACM Transactions on Knowledge Discovery from Data (TKDD), 10(1), 1-51.](https://dl.acm.org/doi/10.1145/2733381)
 
-[2] [Wang, Y., Yu, S., Gu, Y., & Shun, J. (2021). Fast parallel algorithms for euclidean minimum spanning tree and hierarchical spatial clustering. arXiv preprint arXiv:2104.01126.](https://arxiv.org/pdf/2104.01126.pdf)
+[2] [Yiqiu Wang, Shangdi Yu, Yan Gu, and Julian Shun. 2021. Fast Parallel Algorithms for Euclidean Minimum Spanning Tree and Hierarchical Spatial Clustering. In Proceedings of the 2021 International Conference on Management of Data (SIGMOD/PODS '21). Association for Computing Machinery, New York, NY, USA, 1982–1995.](https://dl.acm.org/doi/10.1145/3448016.3457296)
